@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BF29066-C0B2-419D-B478-1E8930DFBEFE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UIH.RT.TMS.AdminServer</RootNamespace>
+    <AssemblyName>UIH.RT.TMS.AdminServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>..\..\..\..\UIH\appserver\bin_debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>..\..\..\..\UIH\appserver\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+    <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Reference Include="NHapi.Base">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\UIH\bin_debug\NHapi.Base.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V231">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\UIH\bin_debug\NHapi.Model.V231.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V25">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\UIH\bin_debug\NHapi.Model.V25.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Reference Include="NHapi.Base">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\UIH\bin\NHapi.Base.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V231">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\UIH\bin\NHapi.Model.V231.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V25">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\UIH\bin\NHapi.Model.V25.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminServerService.cs" />
+    <Compile Include="HL7\HL7Enum.cs" />
+    <Compile Include="HL7\HL7Exception.cs" />
+    <Compile Include="HL7\HL7Handler.cs" />
+    <Compile Include="HL7\HL7Header.cs" />
+    <Compile Include="HL7\Identifier.cs" />
+    <Compile Include="HL7\MessageHeader.cs" />
+    <Compile Include="HL7\Patient.cs" />
+    <Compile Include="HL7\PatientDuplicateEntry.cs" />
+    <Compile Include="HL7\PatientFeedV3.Designer.cs" />
+    <Compile Include="HL7\PatientId.cs" />
+    <Compile Include="HL7\PatientIdentifier.cs" />
+    <Compile Include="HL7\PatientIdentityFeedRecord.cs" />
+    <Compile Include="HL7\PatientInfo.cs" />
+    <Compile Include="HL7\PersonIdentifier.cs" />
+    <Compile Include="HL7\XdsPatientServiceV3Impl.cs" />
+    <Compile Include="ServerStoreScp.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service.Designer.cs">
+      <DependentUpon>Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HL7\PatientFeedV3.resx" />
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Service.resx">
+      <DependentUpon>Service.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UIH.RT.Framework.DataModel\UIH.RT.Framework.DataModel.csproj">
+      <Project>{BBB48895-175F-4CF5-A6A3-2880530DDBA0}</Project>
+      <Name>UIH.RT.Framework.DataModel</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\UIH.RT.Framework.DBWrapper\UIH.RT.TMS.DBWrapper.csproj">
+      <Project>{38BAC752-0707-4058-AFD3-14D0E61610D0}</Project>
+      <Name>UIH.RT.TMS.DBWrapper</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\UIH.RT.Framework.Log\UIH.RT.Framework.Log.csproj">
+      <Project>{B20EFEAC-2293-458D-ACE5-90BA490B92F9}</Project>
+      <Name>UIH.RT.Framework.Log</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\UIH.RT.TMS.HL7\UIH.RT.TMS.HL7.csproj">
+      <Project>{8C463B1A-C633-4951-834D-6F639AAD43D1}</Project>
+      <Name>UIH.RT.TMS.HL7</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\UIH.RT.TMS.ServerBase\UIH.RT.TMS.ServerBase.csproj">
+      <Project>{8116EA7A-C9C4-4E94-B370-02E4C73A9A5D}</Project>
+      <Name>UIH.RT.TMS.ServerBase</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\UIH.RT.TMS.ServerStoreScp\UIH.RT.TMS.ServerStoreScp.csproj">
+      <Project>{B6EB8B8F-CB87-42A3-B46D-B0CDEDD93D1B}</Project>
+      <Name>UIH.RT.TMS.ServerStoreScp</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

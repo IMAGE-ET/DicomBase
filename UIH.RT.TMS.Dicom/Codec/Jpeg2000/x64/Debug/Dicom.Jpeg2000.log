@@ -1,0 +1,493 @@
+﻿Build started 2016-5-16 19:13:59.
+     1>Project "D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg2000\Dicom.Jpeg2000.vcxproj" on node 2 (build target(s)).
+     1>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1422,5): warning : The referenced project '..\..\..\Common\ClearCanvas.Common.csproj' does not exist.
+     1>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1422,5): warning : The referenced project '..\..\ClearCanvas.Dicom.csproj' does not exist.
+     1>ResolveAssemblyReferences:
+         Primary reference "nunit.framework, Version=2.6.0.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77".
+     1>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "nunit.framework, Version=2.6.0.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+                 For SearchPath "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\lib\amd64".
+                 Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\lib\amd64\nunit.framework.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\lib\amd64\nunit.framework.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\lib\amd64\nunit.framework.exe", but it didn't exist.
+                 For SearchPath "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\amd64".
+                 Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\amd64\nunit.framework.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\amd64\nunit.framework.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib\amd64\nunit.framework.exe", but it didn't exist.
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\..\..\ReferencedAssemblies\nunit.framework.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\nunit.framework.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\nunit.framework.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\nunit.framework.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\nunit.framework.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\nunit.framework.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\nunit.framework.exe", but it didn't exist.
+                 Considered "c:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.framework.winmd", but it didn't exist.
+                 Considered "c:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.framework.dll", but it didn't exist.
+                 Considered "c:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.framework.exe", but it didn't exist.
+                 Considered "c:\Program Files (x86)\Microsoft.NET\ADOMD.NET\100\nunit.framework.winmd", but it didn't exist.
+                 Considered "c:\Program Files (x86)\Microsoft.NET\ADOMD.NET\100\nunit.framework.dll", but it didn't exist.
+                 Considered "c:\Program Files (x86)\Microsoft.NET\ADOMD.NET\100\nunit.framework.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.framework.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.framework.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\nunit.framework.exe", but it didn't exist.
+                 Considered "c:\Program Files\IIS\Microsoft Web Deploy\nunit.framework.winmd", but it didn't exist.
+                 Considered "c:\Program Files\IIS\Microsoft Web Deploy\nunit.framework.dll", but it didn't exist.
+                 Considered "c:\Program Files\IIS\Microsoft Web Deploy\nunit.framework.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\nunit.framework.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\nunit.framework.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\nunit.framework.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "nunit.framework, Version=2.6.0.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "nunit.framework, Version=2.6.0.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" as a file name, but it didn't exist.
+                 For SearchPath "x64\Debug\".
+                 Considered "x64\Debug\nunit.framework.winmd", but it didn't exist.
+                 Considered "x64\Debug\nunit.framework.dll", but it didn't exist.
+                 Considered "x64\Debug\nunit.framework.exe", but it didn't exist.
+         AssemblyFoldersEx location: "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}"
+                 C:\Program Files (x86)\Common Files\microsoft shared\VSTT\10.0\UITestExtensionPackages
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v9.0\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v8.0\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v10.0\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Common\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v4.0\
+                 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\x64\
+                 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\
+                 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Itanium\
+                 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\
+                 C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\
+                 c:\Program Files (x86)\Microsoft Synchronization Services\ADO.NET\v1.0
+                 c:\Program Files (x86)\Microsoft SQL Server Compact Edition\v3.5\Desktop
+                 C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Server\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\
+                 C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\
+                 C:\Program Files (x86)\MySQL\MySQL Connector Net 6.4.3\Assemblies\v4.0\
+                 C:\Program Files (x86)\MySQL\MySQL Connector Net 6.4.3\Assemblies\v2.0\
+                 C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\2.0\Runtime\v4.0\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VSTSDB\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v9.0\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v10.0\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v9.0\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v10.0\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Common\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\
+                 C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\
+                 c:\Program Files (x86)\Microsoft Synchronization Services\ADO.NET\v1.0
+                 c:\Program Files (x86)\Microsoft SDKs\Microsoft Sync Framework\v1.0\Runtime\ADO.NET\V2.0\x64\
+                 c:\Program Files (x86)\Microsoft SQL Server Compact Edition\v3.5\Desktop
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\
+                 C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\PublicAssemblies\
+                 C:\Program Files (x86)\Microsoft Chart Controls\Assemblies
+                 C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\2.0\Runtime\v2.0\
+                 c:\Program Files (x86)\Microsoft SDKs\Microsoft Sync Framework\v1.0\Runtime\x86\
+                 c:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 2\Assemblies\
+       InitializeBuildStatus:
+         Touching "x64\Debug\ClearCanvas.Dicom.Codec.Jpeg2000.unsuccessfulbuild".
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /errorReport:prompt DicomJpeg2000Codec.cpp DicomJpeg2000CodecFactory.cpp DicomJpeg2000CodecTest.cpp /clr:nostdlib 
+         DicomJpeg2000Codec.cpp
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(72): error C2653: 'UIH' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(72): error C2871: 'Dicom' : a namespace with this name does not exist
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(73): error C2653: 'UIH' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(73): error C2871: 'Codec' : a namespace with this name does not exist
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(82): error C2504: 'DicomCodecParameters' : base class undefined
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(181): error C2504: 'IDicomCodec' : base class undefined
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2146: syntax error : missing ';' before identifier 'TransferSyntax'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2433: 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::DicomJpeg2000Codec::property' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2473: 'CodecTransferSyntax' : looks like a function definition, but there is no parameter list.
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): warning C4183: 'get': missing return type; assumed to be a member function returning 'int'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(186): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(186): error C2433: 'DicomCodecParameters' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(186): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(186): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(187): error C2440: 'return' : cannot convert from 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::DicomJpeg2000Parameters ^' to 'int'
+                 No user-defined-conversion operator available, or
+                 There is no context in which this conversion is possible
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(188): error C2617: 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::GetDefaultParameters' : inconsistent return statement
+                 d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(186) : see declaration of 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::GetDefaultParameters'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2065: 'DicomUncompressedPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2065: 'oldPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2065: 'DicomCompressedPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2065: 'newPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2065: 'parameters' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2182: 'Encode' : illegal use of type 'void'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2433: 'Encode' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2078: too many initializers
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2065: 'DicomCompressedPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2065: 'oldPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2065: 'DicomUncompressedPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2065: 'newPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2065: 'parameters' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2182: 'Decode' : illegal use of type 'void'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2433: 'Decode' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2078: too many initializers
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(192): error C2061: syntax error : identifier 'DicomCompressedPixelData'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(192): error C2575: 'DecodeFrame' : only member functions and bases can be virtual
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(196): error C2504: 'DicomJpeg2000Codec' : base class undefined
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2146: syntax error : missing ';' before identifier 'TransferSyntax'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2473: 'CodecTransferSyntax' : looks like a function definition, but there is no parameter list.
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2433: 'UIH::RT::TMS::Dicom::Codec::DicomJpeg2000LossyCodec::TransferSyntax' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2217: 'override' requires 'virtual'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): warning C4183: 'get': missing return type; assumed to be a member function returning 'int'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(198): warning C4490: 'override' : incorrect use of override specifier; 'UIH::RT::TMS::Dicom::Codec::DicomJpeg2000LossyCodec::Name::get' does not match a base ref class method
+                 'new' or 'override' are only allowed when a matching base method from a ref class exists
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): warning C4490: 'override' : incorrect use of override specifier; 'UIH::RT::TMS::Dicom::Codec::DicomJpeg2000LossyCodec::get' does not match a base ref class method
+                 'new' or 'override' are only allowed when a matching base method from a ref class exists
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(203): error C2504: 'DicomJpeg2000Codec' : base class undefined
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2146: syntax error : missing ';' before identifier 'TransferSyntax'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2473: 'CodecTransferSyntax' : looks like a function definition, but there is no parameter list.
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2433: 'UIH::RT::TMS::Dicom::DicomJpeg2000LosslessCodec::TransferSyntax' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2217: 'override' requires 'virtual'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): warning C4183: 'get': missing return type; assumed to be a member function returning 'int'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(205): warning C4490: 'override' : incorrect use of override specifier; 'UIH::RT::TMS::Dicom::DicomJpeg2000LosslessCodec::Name::get' does not match a base ref class method
+                 'new' or 'override' are only allowed when a matching base method from a ref class exists
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): warning C4490: 'override' : incorrect use of override specifier; 'UIH::RT::TMS::Dicom::DicomJpeg2000LosslessCodec::get' does not match a base ref class method
+                 'new' or 'override' are only allowed when a matching base method from a ref class exists
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(212): error C2059: syntax error : '}'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(212): error C2143: syntax error : missing ';' before '}'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(212): error C2059: syntax error : '}'
+     1>DicomJpeg2000Codec.cpp(74): error C2039: 'Common' : is not a member of 'UIH::RT::TMS'
+     1>DicomJpeg2000Codec.cpp(74): error C2871: 'Common' : a namespace with this name does not exist
+     1>DicomJpeg2000Codec.cpp(83): error C2653: 'Platform' : is not a class or namespace name
+     1>DicomJpeg2000Codec.cpp(83): error C2653: 'LogLevel' : is not a class or namespace name
+     1>DicomJpeg2000Codec.cpp(83): error C2065: 'Error' : undeclared identifier
+     1>DicomJpeg2000Codec.cpp(83): error C3861: 'Log': identifier not found
+     1>DicomJpeg2000Codec.cpp(87): error C2653: 'Platform' : is not a class or namespace name
+     1>DicomJpeg2000Codec.cpp(87): error C2653: 'LogLevel' : is not a class or namespace name
+     1>DicomJpeg2000Codec.cpp(87): error C2065: 'Warn' : undeclared identifier
+     1>DicomJpeg2000Codec.cpp(87): error C3861: 'Log': identifier not found
+     1>DicomJpeg2000Codec.cpp(91): error C2653: 'Platform' : is not a class or namespace name
+     1>DicomJpeg2000Codec.cpp(91): error C2653: 'LogLevel' : is not a class or namespace name
+     1>DicomJpeg2000Codec.cpp(91): error C2065: 'Info' : undeclared identifier
+     1>DicomJpeg2000Codec.cpp(91): error C3861: 'Log': identifier not found
+     1>DicomJpeg2000Codec.cpp(118): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>DicomJpeg2000Codec.cpp(118): error C2143: syntax error : missing ';' before '^'
+     1>DicomJpeg2000Codec.cpp(118): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>DicomJpeg2000Codec.cpp(118): error C3083: 'CodecTransferSyntax': the symbol to the left of a '::' must be a type
+     1>DicomJpeg2000Codec.cpp(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>DicomJpeg2000Codec.cpp(120): error C2440: 'return' : cannot convert from 'nullptr' to 'int'
+                 nullptr can only be converted to pointer or handle types
+     1>DicomJpeg2000Codec.cpp(123): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>DicomJpeg2000Codec.cpp(123): error C2143: syntax error : missing ';' before '^'
+     1>DicomJpeg2000Codec.cpp(123): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>DicomJpeg2000Codec.cpp(123): error C2086: 'int UIH::RT::TMS::Dicom::Codec::Jpeg2000::TransferSyntax' : redefinition
+                 DicomJpeg2000Codec.cpp(118) : see declaration of 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::TransferSyntax'
+     1>DicomJpeg2000Codec.cpp(123): error C3083: 'CodecTransferSyntax': the symbol to the left of a '::' must be a type
+     1>DicomJpeg2000Codec.cpp(123): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>DicomJpeg2000Codec.cpp(123): error C2888: 'System::Int32 ^UIH::RT::TMS::Dicom::Codec::DicomJpeg2000LossyCodec::get(void)' : symbol cannot be defined within namespace 'Jpeg2000'
+     1>DicomJpeg2000Codec.cpp(124): error C2039: 'Jpeg2000ImageCompression' : is not a member of 'System::Int32'
+                 c:\program files (x86)\reference assemblies\microsoft\framework\.netframework\v4.0\mscorlib.dll : see declaration of 'System::Int32'
+     1>DicomJpeg2000Codec.cpp(124): error C2065: 'Jpeg2000ImageCompression' : undeclared identifier
+     1>DicomJpeg2000Codec.cpp(126): error C2888: 'System::String ^UIH::RT::TMS::Dicom::Codec::DicomJpeg2000LossyCodec::Name::get(void)' : symbol cannot be defined within namespace 'Jpeg2000'
+     1>DicomJpeg2000Codec.cpp(127): error C2039: 'Jpeg2000ImageCompression' : is not a member of 'System::Int32'
+                 c:\program files (x86)\reference assemblies\microsoft\framework\.netframework\v4.0\mscorlib.dll : see declaration of 'System::Int32'
+     1>DicomJpeg2000Codec.cpp(127): error C2065: 'Jpeg2000ImageCompression' : undeclared identifier
+     1>DicomJpeg2000Codec.cpp(127): error C2227: left of '->Name' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>DicomJpeg2000Codec.cpp(129): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>DicomJpeg2000Codec.cpp(129): error C2143: syntax error : missing ';' before '^'
+     1>DicomJpeg2000Codec.cpp(129): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>DicomJpeg2000Codec.cpp(129): error C2086: 'int UIH::RT::TMS::Dicom::Codec::Jpeg2000::TransferSyntax' : redefinition
+                 DicomJpeg2000Codec.cpp(118) : see declaration of 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::TransferSyntax'
+     1>DicomJpeg2000Codec.cpp(129): error C3083: 'CodecTransferSyntax': the symbol to the left of a '::' must be a type
+     1>DicomJpeg2000Codec.cpp(129): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>DicomJpeg2000Codec.cpp(129): error C2888: 'System::Int32 ^UIH::RT::TMS::Dicom::DicomJpeg2000LosslessCodec::get(void)' : symbol cannot be defined within namespace 'Jpeg2000'
+     1>DicomJpeg2000Codec.cpp(130): error C2039: 'Jpeg2000ImageCompressionLosslessOnly' : is not a member of 'System::Int32'
+                 c:\program files (x86)\reference assemblies\microsoft\framework\.netframework\v4.0\mscorlib.dll : see declaration of 'System::Int32'
+     1>DicomJpeg2000Codec.cpp(130): error C2065: 'Jpeg2000ImageCompressionLosslessOnly' : undeclared identifier
+     1>DicomJpeg2000Codec.cpp(132): error C2888: 'System::String ^UIH::RT::TMS::Dicom::DicomJpeg2000LosslessCodec::Name::get(void)' : symbol cannot be defined within namespace 'Jpeg2000'
+     1>DicomJpeg2000Codec.cpp(133): error C2039: 'Jpeg2000ImageCompressionLosslessOnly' : is not a member of 'System::Int32'
+                 c:\program files (x86)\reference assemblies\microsoft\framework\.netframework\v4.0\mscorlib.dll : see declaration of 'System::Int32'
+     1>DicomJpeg2000Codec.cpp(133): error C2065: 'Jpeg2000ImageCompressionLosslessOnly' : undeclared identifier
+     1>DicomJpeg2000Codec.cpp(133): error C2227: left of '->Name' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>DicomJpeg2000Codec.cpp(137): error C2039: 'Encode' : is not a member of 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::DicomJpeg2000Codec'
+                 d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(180) : see declaration of 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::DicomJpeg2000Codec'
+     1>DicomJpeg2000Codec.cpp(137): error C2065: 'DicomUncompressedPixelData' : undeclared identifier
+     1>DicomJpeg2000Codec.cpp(137): fatal error C1003: error count exceeds 100; stopping compilation
+         DicomJpeg2000CodecFactory.cpp
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecFactory.h(69): error C3083: 'ComponentModel': the symbol to the left of a '::' must be a type
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecFactory.h(69): error C2039: 'Composition' : is not a member of 'System'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecFactory.h(69): error C2871: 'Composition' : a namespace with this name does not exist
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecFactory.h(71): error C2653: 'UIH' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecFactory.h(71): error C2871: 'Dicom' : a namespace with this name does not exist
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecFactory.h(72): error C2653: 'UIH' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecFactory.h(72): error C2871: 'Codec' : a namespace with this name does not exist
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(72): error C2653: 'UIH' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(72): error C2871: 'Dicom' : a namespace with this name does not exist
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(73): error C2653: 'UIH' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(73): error C2871: 'Codec' : a namespace with this name does not exist
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(82): error C2504: 'DicomCodecParameters' : base class undefined
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(181): error C2504: 'IDicomCodec' : base class undefined
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2146: syntax error : missing ';' before identifier 'TransferSyntax'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2433: 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::DicomJpeg2000Codec::property' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2473: 'CodecTransferSyntax' : looks like a function definition, but there is no parameter list.
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(184): warning C4183: 'get': missing return type; assumed to be a member function returning 'int'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(186): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(186): error C2433: 'DicomCodecParameters' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(186): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(186): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(187): error C2440: 'return' : cannot convert from 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::DicomJpeg2000Parameters ^' to 'int'
+                 No user-defined-conversion operator available, or
+                 There is no context in which this conversion is possible
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(188): error C2617: 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::GetDefaultParameters' : inconsistent return statement
+                 d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(186) : see declaration of 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::GetDefaultParameters'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2065: 'DicomUncompressedPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2065: 'oldPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2065: 'DicomCompressedPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2065: 'newPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2065: 'parameters' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2182: 'Encode' : illegal use of type 'void'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2433: 'Encode' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(190): error C2078: too many initializers
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2065: 'DicomCompressedPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2065: 'oldPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2065: 'DicomUncompressedPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2065: 'newPixelData' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2065: 'parameters' : undeclared identifier
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2182: 'Decode' : illegal use of type 'void'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2433: 'Decode' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(191): error C2078: too many initializers
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(192): error C2061: syntax error : identifier 'DicomCompressedPixelData'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(192): error C2575: 'DecodeFrame' : only member functions and bases can be virtual
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(196): error C2504: 'DicomJpeg2000Codec' : base class undefined
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2146: syntax error : missing ';' before identifier 'TransferSyntax'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2473: 'CodecTransferSyntax' : looks like a function definition, but there is no parameter list.
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2433: 'UIH::RT::TMS::Dicom::Codec::DicomJpeg2000LossyCodec::TransferSyntax' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C2217: 'override' requires 'virtual'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): warning C4183: 'get': missing return type; assumed to be a member function returning 'int'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(198): warning C4490: 'override' : incorrect use of override specifier; 'UIH::RT::TMS::Dicom::Codec::DicomJpeg2000LossyCodec::Name::get' does not match a base ref class method
+                 'new' or 'override' are only allowed when a matching base method from a ref class exists
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(199): warning C4490: 'override' : incorrect use of override specifier; 'UIH::RT::TMS::Dicom::Codec::DicomJpeg2000LossyCodec::get' does not match a base ref class method
+                 'new' or 'override' are only allowed when a matching base method from a ref class exists
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(203): error C2504: 'DicomJpeg2000Codec' : base class undefined
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2146: syntax error : missing ';' before identifier 'TransferSyntax'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2473: 'CodecTransferSyntax' : looks like a function definition, but there is no parameter list.
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2143: syntax error : missing ';' before '^'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2433: 'UIH::RT::TMS::Dicom::DicomJpeg2000LosslessCodec::TransferSyntax' : 'virtual' not permitted on data declarations
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C2217: 'override' requires 'virtual'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): warning C4183: 'get': missing return type; assumed to be a member function returning 'int'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(205): warning C4490: 'override' : incorrect use of override specifier; 'UIH::RT::TMS::Dicom::DicomJpeg2000LosslessCodec::Name::get' does not match a base ref class method
+                 'new' or 'override' are only allowed when a matching base method from a ref class exists
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(206): warning C4490: 'override' : incorrect use of override specifier; 'UIH::RT::TMS::Dicom::DicomJpeg2000LosslessCodec::get' does not match a base ref class method
+                 'new' or 'override' are only allowed when a matching base method from a ref class exists
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(212): error C2059: syntax error : '}'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(212): error C2143: syntax error : missing ';' before '}'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(212): error C2059: syntax error : '}'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecFactory.h(76): error C2143: syntax error : missing ';' before '{'
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecFactory.h(76): error C2447: '{' : missing function header (old-style formal list?)
+     1>DicomJpeg2000CodecFactory.cpp(82): error C2039: 'TransferSyntax' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>DicomJpeg2000CodecFactory.cpp(82): error C2143: syntax error : missing ';' before '^'
+     1>DicomJpeg2000CodecFactory.cpp(82): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>DicomJpeg2000CodecFactory.cpp(82): error C2653: 'DicomJpeg2000LosslessCodecFactory' : is not a class or namespace name
+     1>DicomJpeg2000CodecFactory.cpp(82): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>DicomJpeg2000CodecFactory.cpp(83): error C3083: 'TransferSyntax': the symbol to the left of a '::' must be a type
+     1>DicomJpeg2000CodecFactory.cpp(83): error C2039: 'Jpeg2000ImageCompressionLosslessOnly' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>DicomJpeg2000CodecFactory.cpp(83): error C2065: 'Jpeg2000ImageCompressionLosslessOnly' : undeclared identifier
+     1>DicomJpeg2000CodecFactory.cpp(85): error C2653: 'DicomJpeg2000LosslessCodecFactory' : is not a class or namespace name
+     1>DicomJpeg2000CodecFactory.cpp(85): error C2556: 'System::String ^UIH::RT::TMS::Dicom::Codec::Jpeg2000::get(void)' : overloaded function differs only by return type from 'System::Int32 ^UIH::RT::TMS::Dicom::Codec::Jpeg2000::get(void)'
+                 DicomJpeg2000CodecFactory.cpp(82) : see declaration of 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::get'
+     1>DicomJpeg2000CodecFactory.cpp(85): error C2373: 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::get' : redefinition; different type modifiers
+                 DicomJpeg2000CodecFactory.cpp(82) : see declaration of 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::get'
+     1>DicomJpeg2000CodecFactory.cpp(86): error C3083: 'TransferSyntax': the symbol to the left of a '::' must be a type
+     1>DicomJpeg2000CodecFactory.cpp(86): error C2039: 'Jpeg2000ImageCompressionLosslessOnly' : is not a member of 'UIH::RT::TMS::Dicom'
+     1>DicomJpeg2000CodecFactory.cpp(86): error C2065: 'Jpeg2000ImageCompressionLosslessOnly' : undeclared identifier
+     1>DicomJpeg2000CodecFactory.cpp(86): error C2227: left of '->Name' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>DicomJpeg2000CodecFactory.cpp(88): error C2653: 'DicomJpeg2000LosslessCodecFactory' : is not a class or namespace name
+     1>DicomJpeg2000CodecFactory.cpp(88): error C2556: 'bool UIH::RT::TMS::Dicom::Codec::Jpeg2000::get(void)' : overloaded function differs only by return type from 'System::Int32 ^UIH::RT::TMS::Dicom::Codec::Jpeg2000::get(void)'
+                 DicomJpeg2000CodecFactory.cpp(82) : see declaration of 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::get'
+     1>DicomJpeg2000CodecFactory.cpp(91): error C2143: syntax error : missing ';' before '^'
+     1>DicomJpeg2000CodecFactory.cpp(91): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>DicomJpeg2000CodecFactory.cpp(91): error C2086: 'int UIH::RT::TMS::Dicom::Codec::Jpeg2000::DicomCodecParameters' : redefinition
+                 d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000Codec.h(186) : see declaration of 'UIH::RT::TMS::Dicom::Codec::Jpeg2000::DicomCodecParameters'
+     1>DicomJpeg2000CodecFactory.cpp(91): error C2653: 'DicomJpeg2000LosslessCodecFactory' : is not a class or namespace name
+     1>DicomJpeg2000CodecFactory.cpp(91): error C2065: 'DicomDataset' : undeclared identifier
+     1>DicomJpeg2000CodecFactory.cpp(91): error C2065: 'dataSet' : undeclared identifier
+     1>DicomJpeg2000CodecFactory.cpp(91): error C3145: 'GetCodecParameters' : global or static variable may not have managed type 'System::Int32 ^'
+                 may not declare a global or static variable, or a member of a native type that refers to objects in the gc heap
+     1>DicomJpeg2000CodecFactory.cpp(91): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>DicomJpeg2000CodecFactory.cpp(91): fatal error C1903: unable to recover from previous error(s); stopping compilation
+         DicomJpeg2000CodecTest.cpp
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(68): error C2653: 'NUnit' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(68): error C2871: 'Framework' : a namespace with this name does not exist
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(69): error C2653: 'ClearCanvas' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(69): error C2871: 'Dicom' : a namespace with this name does not exist
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(70): error C2653: 'ClearCanvas' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(70): error C2871: 'Codec' : a namespace with this name does not exist
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(71): error C2653: 'ClearCanvas' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(71): error C2871: 'Tests' : a namespace with this name does not exist
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(78): error C2653: 'NUnit' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(78): error C2337: 'TestFixture' : attribute not found
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(80): error C2504: 'AbstractCodecTest' : base class undefined
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(82): error C2653: 'NUnit' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(82): error C2337: 'Test' : attribute not found
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(85): error C2653: 'NUnit' : is not a class or namespace name
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg2000\DicomJpeg2000CodecTest.h(85): error C2337: 'Test' : attribute not found
+     1>DicomJpeg2000CodecTest.cpp(69): error C2653: 'NUnit' : is not a class or namespace name
+     1>DicomJpeg2000CodecTest.cpp(69): error C2871: 'Framework' : a namespace with this name does not exist
+     1>DicomJpeg2000CodecTest.cpp(72): error C2039: 'Tests' : is not a member of 'ClearCanvas::Dicom::Codec'
+     1>DicomJpeg2000CodecTest.cpp(72): error C2871: 'Tests' : a namespace with this name does not exist
+     1>DicomJpeg2000CodecTest.cpp(81): error C2065: 'TransferSyntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(81): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(81): error C2653: 'TransferSyntax' : is not a class or namespace name
+     1>DicomJpeg2000CodecTest.cpp(81): error C2065: 'Jpeg2000ImageCompressionLosslessOnly' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(83): error C2065: 'DicomFile' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(83): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(83): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(84): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(84): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(84): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(86): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(86): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(87): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(87): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(87): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(89): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(89): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(90): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(90): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(90): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(92): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(92): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(93): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(93): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(93): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(95): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(95): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(96): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(96): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(96): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(98): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(98): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(99): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(99): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(99): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(101): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(101): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(102): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(102): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(102): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(104): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(104): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(105): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(105): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(105): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(107): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(107): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(108): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(108): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(108): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(110): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(110): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(111): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(111): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(111): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(113): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(113): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(114): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(114): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(114): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(116): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(116): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(117): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(117): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(117): error C3861: 'LosslessImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(122): error C2065: 'TransferSyntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(122): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(122): error C2653: 'TransferSyntax' : is not a class or namespace name
+     1>DicomJpeg2000CodecTest.cpp(122): error C2065: 'Jpeg2000ImageCompression' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(124): error C2065: 'DicomFile' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(124): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(124): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(125): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(125): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(125): error C3861: 'LossyImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(127): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(127): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(128): error C2065: 'syntax' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(128): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(128): error C3861: 'LossyImageTest': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(130): error C2065: 'file' : undeclared identifier
+     1>DicomJpeg2000CodecTest.cpp(130): error C3861: 'CreateFile': identifier not found
+     1>DicomJpeg2000CodecTest.cpp(130): fatal error C1003: error count exceeds 100; stopping compilation
+         Generating Code...
+     1>Done Building Project "D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg2000\Dicom.Jpeg2000.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.74

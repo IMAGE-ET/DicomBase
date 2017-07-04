@@ -1,0 +1,5 @@
+D:\RT_TMS\UIH\bin\UIH.RT.TMS.DicomService.dll
+D:\RT_TMS\UIH\bin\UIH.RT.TMS.DicomService.pdb
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.DicomService\obj\x64\Release\UIH.RT.TMS.DicomService.csprojResolveAssemblyReference.cache
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.DicomService\obj\x64\Release\UIH.RT.TMS.DicomService.dll
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.DicomService\obj\x64\Release\UIH.RT.TMS.DicomService.pdb

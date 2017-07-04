@@ -1,0 +1,3 @@
+D:\RT_TMS\UIH\appserver\bin\UIH.RT.TMS.HL7.dll
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.HL7\obj\x64\Release\UIH.RT.TMS.HL7.csprojResolveAssemblyReference.cache
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.HL7\obj\x64\Release\UIH.RT.TMS.HL7.dll

@@ -1,0 +1,65 @@
+﻿Build started 2016-5-16 19:16:43.
+     1>Project "D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\Jpeg.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Release\UIH.RT.TMS.Dicom.Codec.Jpeg.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /O2 /GL /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ComponentModel.Composition.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /FUD:\RT_TMS\UIH\bin\UIH.RT.TMS.Dicom.dll /FUD:\RT_TMS\UIH\bin\UIH.RT.TMS.DicomCommon.dll /errorReport:prompt AssemblyInfo.cpp DicomJpegCodec.cpp DicomJpegCodecFactory.cpp Jpeg12Codec.cpp Jpeg16Codec.cpp Jpeg8Codec.cpp /clr:nostdlib 
+         AssemblyInfo.cpp
+         DicomJpegCodec.cpp
+         DicomJpegCodecFactory.cpp
+         Jpeg12Codec.cpp
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(69): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(438): warning C4267: '-=' : conversion from 'size_t' to 'long', possible loss of data
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(461): warning C4267: '=' : conversion from 'size_t' to 'long', possible loss of data
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(541): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         Jpeg16Codec.cpp
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(69): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(438): warning C4267: '-=' : conversion from 'size_t' to 'long', possible loss of data
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(461): warning C4267: '=' : conversion from 'size_t' to 'long', possible loss of data
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(541): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         Jpeg8Codec.cpp
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(69): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(438): warning C4267: '-=' : conversion from 'size_t' to 'long', possible loss of data
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(461): warning C4267: '=' : conversion from 'size_t' to 'long', possible loss of data
+     1>d:\rt_tms\main\features\projects\uih.rt.tms.dicom\codec\jpeg\JpegCodec.i(541): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /clr /nologo /W3 /WX- /O2 /GL /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /TP /errorReport:prompt "C:\Users\chengcheng.tao\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       ResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"x64\Release\app.res" app.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"x64\Release\UIH.RT.TMS.Dicom.Codec.Jpeg.dll" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:"x64\Release\UIH.RT.TMS.Dicom.Codec.Jpeg.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\x64\Release\UIH.RT.TMS.Dicom.Codec.Jpeg.pdb" /LTCG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 /DLL x64\Release\app.res
+         x64\Release\AssemblyInfo.obj
+         x64\Release\DicomJpegCodec.obj
+         x64\Release\DicomJpegCodecFactory.obj
+         x64\Release\Jpeg12Codec.obj
+         x64\Release\Jpeg16Codec.obj
+         x64\Release\Jpeg8Codec.obj
+         "x64\Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\libijg12\x64\Release\libijg12.lib
+         D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\libijg16\x64\Release\libijg16.lib
+         D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\libijg8\x64\Release\libijg8.lib
+         Generating code
+         Finished generating code
+         Jpeg.vcxproj -> D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\x64\Release\UIH.RT.TMS.Dicom.Codec.Jpeg.dll
+       MetaGen:
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'UIH.RT.TMS.Dicom.Codec.Jpeg, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. 系统找不到指定的文件。
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"x64\Release\UIH.RT.TMS.Dicom.Codec.Jpeg.dll;#2" /manifest x64\Release\UIH.RT.TMS.Dicom.Codec.Jpeg.dll.intermediate.manifest
+       _CopyFilesMarkedCopyLocal:
+         Copying file from "D:\RT_TMS\UIH\bin\UIH.RT.TMS.Dicom.dll" to "x64\Release\UIH.RT.TMS.Dicom.dll".
+         Copying file from "D:\RT_TMS\UIH\bin\UIH.RT.TMS.DicomCommon.dll" to "x64\Release\UIH.RT.TMS.DicomCommon.dll".
+         Copying file from "D:\RT_TMS\UIH\bin\log4net.dll" to "x64\Release\log4net.dll".
+         Copying file from "D:\RT_TMS\UIH\bin\UIH.RT.TMS.DicomCommon.pdb" to "x64\Release\UIH.RT.TMS.DicomCommon.pdb".
+         Copying file from "D:\RT_TMS\UIH\bin\UIH.RT.TMS.Dicom.pdb" to "x64\Release\UIH.RT.TMS.Dicom.pdb".
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\UIH.RT.TMS.Dicom.Codec.Jpeg.unsuccessfulbuild".
+         Touching "x64\Release\UIH.RT.TMS.Dicom.Codec.Jpeg.lastbuildstate".
+     1>Done Building Project "D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\Jpeg.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.34

@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3FF7900C-0B4C-4B15-B977-E8FA0BC69286}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UIH.RT.TMS.Dicom</RootNamespace>
+    <AssemblyName>UIH.RT.TMS.Dicom</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>..\..\..\..\UIH\bin_debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>..\..\..\..\UIH\bin\</OutputPath>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>
+    </DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\BuildConfig\Version\AssemblyVersionInfo.cs" />
+    <Compile Include="Codec\DicomCodecException.cs" />
+    <Compile Include="Codec\DicomCodecRegistry.cs" />
+    <Compile Include="Codec\DicomCodecUnsupportedSopException.cs" />
+    <Compile Include="Codec\IDicomCodec.cs" />
+    <Compile Include="ComparisonResultType.cs" />
+    <Compile Include="Dcm2Bmp.cs" />
+    <Compile Include="DicomElement.cs" />
+    <Compile Include="DicomElementBinary.cs" />
+    <Compile Include="DicomElementBinaryData.cs" />
+    <Compile Include="DicomDataset.cs" />
+    <Compile Include="DicomElementComparisonResult.cs" />
+    <Compile Include="DicomElementMultiValueText.cs" />
+    <Compile Include="DicomElementSingleValueText.cs" />
+    <Compile Include="DicomElementSq.cs" />
+    <Compile Include="DicomCompressedPixelData.cs" />
+    <Compile Include="DicomDataException.cs" />
+    <Compile Include="DicomDirectory.cs" />
+    <Compile Include="DicomException.cs" />
+    <Compile Include="DicomFieldAttribute.cs" />
+    <Compile Include="DicomFile.cs" />
+    <Compile Include="DicomFragmentSequence.cs" />
+    <Compile Include="DicomImplementation.cs" />
+    <Compile Include="DicomMessage.cs" />
+    <Compile Include="DicomMessageBase.cs" />
+    <Compile Include="DicomPixelData.cs" />
+    <Compile Include="DicomSequenceItem.cs" />
+    <Compile Include="DicomSettings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>DicomSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="DicomTag.cs" />
+    <Compile Include="DicomTagDictionary.cs" />
+    <Compile Include="DicomTags.cs" />
+    <Compile Include="DicomUid.cs" />
+    <Compile Include="DicomUncompressedPixelData.cs" />
+    <Compile Include="DicomVM.cs" />
+    <Compile Include="DicomVr.cs" />
+    <Compile Include="DirectoryRecordCollection.cs" />
+    <Compile Include="DirectoryRecordSequenceItem.cs" />
+    <Compile Include="FileReference.cs" />
+    <Compile Include="Flags.cs" />
+    <Compile Include="IDicomElementProvider.cs" />
+    <Compile Include="IDicomCharacterSetParser.cs" />
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="Iod\AnatomicalOrientationType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\CIELabColor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ComponentGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ContextGroups\BreedContextGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ContextGroups\BreedRegistryContextGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ContextGroups\ContextGroupBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ContextGroups\ContextGroupItemBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ContextGroups\IsotopesInRadiopharmaceuticals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ContextGroups\KeyObjectSelectionDocumentTitle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ContextGroups\MixBreedsContextGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ContextGroups\SpeciesContextGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ContinuityOfContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\CorrectedImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\CountsSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\DataLut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\DecayCorrection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\HierarchicalSopInstanceReferenceDictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\IApplicationEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ImageOrientationPatient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ImagePositionPatient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ImageSopInstanceReferenceDictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Institution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\IodBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\ColorSoftcopyPresentationStateIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\EncapsulatedPdfIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\GrayscaleSoftcopyPresentationStateIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\ImageIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\ImageQueryIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\KeyObjectSelectionDocumentIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\ModalityPerformedProcedureStepIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\ModalityWorklistIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\PatientQueryIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\QueryIodBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\SeriesQueryIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Iods\StudyQueryIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\IPatientData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ISeriesData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ISopInstanceData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\IStudyData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\MacAlgorithm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\BasicPixelSpacingCalibrationMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\CodeSequenceMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\CompositeObjectReferenceMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\ContainerMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\ContentIdentificationMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\ContentItemMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\DocumentContentMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\DocumentRelationshipMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\HierarchicalSeriesInstanceReferenceMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\HierarchicalSopInstanceReferenceMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\IIodMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\ImageReferenceMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\ImageSopInstanceReferenceMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\ModalityLutMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\PerformedProcedureStepSummaryMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\PersonIdentificationMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\PresentationStateRelationshipMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\RequestAttributesMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\SeriesAndInstanceReferenceMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\SopInstanceReferenceMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Macros\VoiLut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ModalityDataLut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\BasicFilmBoxModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\BasicFilmSessionModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\BillingAndMaterialManagementCodesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\BitmapDisplayShutter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\ClinicalTrialSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\ClinicalTrialStudyModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\ClinicalTrialSubjectModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\CRSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\CtSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\DisplayedArea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\DisplayShutterMacroIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\EncapsulatedDocumentModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\EncapsulatedDocumentSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\EnhancedMammographySeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\EnhancedPetSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\EnhancedSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\EnhancedUsSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\GeneralEquipment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\GeneralImageModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\GeneralSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\GeneralStudyModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\GraphicAnnotation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\GraphicLayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\IccProfileModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\ImageAcquisitionResultsModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\ImageBoxPixelModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\ImagePixelMacroIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\ImagePlaneModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\ImagingServiceRequestModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\KeyObjectDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\KeyObjectDocumentSeries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\MaskModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\ModalityLut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\MrSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\MultiframeOverlayModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\NmPetPatientOrientationModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\OpthalmicTomographySeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\OverlayActivation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\OverlayPlane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PatientIdentificationModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PatientMedicalModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PatientModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PatientStudyModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PerformedProcedureStepInformationModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PerformedProcedureStepRelationshipModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PetIsotopeModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PetMultiGatedAcquisitionModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PetSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PresentationSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PresentationStateIdentificationModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PresentationStateMask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PresentationStateRelationship.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PresentationStateShutter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PrinterModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\PrintJobModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\RadiationDoseModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\RequestedProcedureModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\ScEquipmentModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\ScheduledProcedureStepModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\SoftcopyPresentationLut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\SoftcopyVoiLut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\SopCommonModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\SpatialTransform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\SpecimenIdentificationModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\SrDocumentContentModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\StudyModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Modules\Tests\FilmSizeTests.cs" />
+    <Compile Include="Iod\Modules\Tests\OverlayPlaneTests.cs" />
+    <Compile Include="Iod\Modules\Tests\PrintScuTests.cs" />
+    <Compile Include="Iod\Modules\XaXrfSeriesModuleIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\PaletteColorLut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\PatientDirection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\PatientIdentityRemoved.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\PatientOrientation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\PatientsSex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\PatientsSexNeutered.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\PersonName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\PhotometricInterpretation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\PixelAspectRatio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\PixelSpacing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\RandomsCorrectionMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ResponsiblePersonRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\SequenceIodBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\SequenceIodList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\BasicColorImageSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\BasicGrayscaleImageSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\BillingSuppliesAndDevicesSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\BreedRegistrationSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\BreedRegistryCodeSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\CodingSchemeIdentificationSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\ContentTemplateSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\DeIdentificationMethodCodeSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\ExposureDoseSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\FilmConsumptionSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\GraphicAnnotationSequenceItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\MaskSubtractionSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\OtherPatientIdsSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\PatientBreedCodeSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\PatientOrientationCodeSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\PatientSpeciesCodeSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\PerformedSeriesSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\QuantitySequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\ReferencedDigitalSignatureSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\ReferencedInstanceSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\ReferencedRequestSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\ReferencedSeriesSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\ReferencedSopInstanceMacSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\RelatedSeriesSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\RequestAttributesSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\ScheduledProcedureStepSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\ScheduledStepAttributesSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\SpecimenSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\SpecimenTypeCodeSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Sequences\ViewCodeSequenceIod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\SeriesReferenceDictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ShutterShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\StandardPaletteColorLuts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\SuvType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Tests\ImageOrientationPatientTests.cs" />
+    <Compile Include="Iod\Tests\ModuleIodAttributeTests.cs" />
+    <Compile Include="Iod\Tests\PatientDirectionTests.cs" />
+    <Compile Include="Iod\Tests\QuadrupedPatientDirectionTests.cs" />
+    <Compile Include="Iod\TypeOfPatientId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Units.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\ValueType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\VerificationFlag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\VoiDataLut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iod\Window.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\ByteBuffer.cs" />
+    <Compile Include="IO\ByteConverter.cs" />
+    <Compile Include="IO\ChunkStream.cs" />
+    <Compile Include="IO\Endian.cs" />
+    <Compile Include="IO\IByteBuffer.cs" />
+    <Compile Include="IO\StreamReader.cs" />
+    <Compile Include="IO\StreamWriter.cs" />
+    <Compile Include="Network\AssociationParameters.cs" />
+    <Compile Include="Network\DicomClient.cs" />
+    <Compile Include="Network\DicomNetworkException.cs" />
+    <Compile Include="Network\DicomServer.cs" />
+    <Compile Include="Network\DicomStatus.cs" />
+    <Compile Include="Network\IDicomClientHandler.cs" />
+    <Compile Include="Network\IDicomServerHandler.cs" />
+    <Compile Include="Network\Listener.cs" />
+    <Compile Include="Network\NetworkBase.cs" />
+    <Compile Include="Network\NetworkSettings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>NetworkSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Network\PDataTFStream.cs" />
+    <Compile Include="Network\PDU.cs" />
+    <Compile Include="Network\Scp\DicomScp.cs" />
+    <Compile Include="Network\Scp\DicomScpHandler.cs" />
+    <Compile Include="Network\Scp\IDicomScp.cs" />
+    <Compile Include="Network\Scu\FindScu.cs" />
+    <Compile Include="Network\Scu\ModalityWorklistScu.cs" />
+    <Compile Include="Network\Scu\MoveScu.cs" />
+    <Compile Include="Network\Scu\PrinterStatusScu.cs" />
+    <Compile Include="Network\Scu\PrintScu.cs" />
+    <Compile Include="Network\Scu\PrintScu2.cs" />
+    <Compile Include="Network\Scu\ScuBase.cs" />
+    <Compile Include="Network\Scu\StorageCommitScu.cs" />
+    <Compile Include="Network\Scu\StorageInstance.cs" />
+    <Compile Include="Network\Scu\StorageScu.cs" />
+    <Compile Include="Network\Scu\VerificationScu.cs" />
+    <Compile Include="Network\SR1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Network\SupportedSop.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SopClass.cs" />
+    <Compile Include="SpecificCharacterSetParser.cs" />
+    <Compile Include="SR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TransferSyntax.cs" />
+    <Compile Include="Utilities\Anonymization\DicomAnonymizer.cs" />
+    <Compile Include="Utilities\Anonymization\DicomAnonymizerTags.cs" />
+    <Compile Include="Utilities\Anonymization\SeriesData.cs" />
+    <Compile Include="Utilities\Anonymization\StudyData.cs" />
+    <Compile Include="Utilities\Anonymization\Tests\AnonymizationTests.cs" />
+    <Compile Include="Utilities\Anonymization\ValidationStrategy.cs" />
+    <Compile Include="Utilities\DateParser.cs" />
+    <Compile Include="Utilities\DateRangeHelper.cs" />
+    <Compile Include="Utilities\DateTimeParser.cs" />
+    <Compile Include="Utilities\DicomStringHelper.cs" />
+    <Compile Include="Utilities\StringEx.cs" />
+    <Compile Include="Utilities\TimeParser.cs" />
+    <Compile Include="Validation\DicomValidator.cs" />
+    <Compile Include="Validation\StringValueValidation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Network\SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DicomSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DicomSettings1.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="DicomTagDictionary.data" />
+    <None Include="Network\NetworkSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>NetworkSettings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Iod\Resources\HotIronStandardColorPalette.xml" />
+    <Content Include="Iod\Resources\HotMetalBlueStandardColorPalette.xml" />
+    <Content Include="Iod\Resources\PET20StepStandardColorPalette.xml" />
+    <Content Include="Iod\Resources\PETStandardColorPalette.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UIH.RT.Framework.Log\UIH.RT.Framework.Log.csproj">
+      <Project>{B20EFEAC-2293-458D-ACE5-90BA490B92F9}</Project>
+      <Name>UIH.RT.Framework.Log</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\UIH.RT.TMS.DICOMCommon\UIH.RT.TMS.DicomCommon.csproj">
+      <Project>{184225AB-ABD5-4EE1-90B4-F83D703DEFC8}</Project>
+      <Name>UIH.RT.TMS.DicomCommon</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if $(ConfigurationName) == Debug (
+  copy "$(TargetPath)" "$(TargetDir)..\appserver\bin_debug\$(TargetFileName)" /y
+) ELSE (
+  copy "$(TargetPath)" "$(TargetDir)..\appserver\bin\$(TargetFileName)" /y
+)
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

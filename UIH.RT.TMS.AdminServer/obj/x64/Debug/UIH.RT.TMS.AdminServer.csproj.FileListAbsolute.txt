@@ -1,0 +1,10 @@
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.AdminServer\obj\x64\Debug\UIH.RT.TMS.AdminServer.csprojResolveAssemblyReference.cache
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.AdminServer\obj\x64\Debug\UIH.RT.TMS.AdminServer.HL7.PatientFeedV3.resources
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.AdminServer\obj\x64\Debug\UIH.RT.TMS.AdminServer.ProjectInstaller.resources
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.AdminServer\obj\x64\Debug\UIH.RT.TMS.AdminServer.AdminServer.resources
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.AdminServer\obj\x64\Debug\UIH.RT.TMS.AdminServer.csproj.GenerateResource.Cache
+D:\RT_TMS\UIH\appserver\bin_debug\UIH.RT.TMS.AdminServer.exe.config
+D:\RT_TMS\UIH\appserver\bin_debug\UIH.RT.TMS.AdminServer.exe
+D:\RT_TMS\UIH\appserver\bin_debug\UIH.RT.TMS.AdminServer.pdb
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.AdminServer\obj\x64\Debug\UIH.RT.TMS.AdminServer.exe
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.AdminServer\obj\x64\Debug\UIH.RT.TMS.AdminServer.pdb

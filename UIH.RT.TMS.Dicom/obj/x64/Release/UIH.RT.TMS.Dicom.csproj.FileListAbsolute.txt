@@ -1,0 +1,8 @@
+D:\RT_TMS\UIH\bin\UIH.RT.TMS.Dicom.dll
+D:\RT_TMS\UIH\bin\UIH.RT.TMS.Dicom.pdb
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\obj\x64\Release\UIH.RT.TMS.Dicom.csprojResolveAssemblyReference.cache
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\obj\x64\Release\UIH.RT.TMS.Dicom.Network.SR.resources
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\obj\x64\Release\UIH.RT.TMS.Dicom.SR.resources
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\obj\x64\Release\UIH.RT.TMS.Dicom.csproj.GenerateResource.Cache
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\obj\x64\Release\UIH.RT.TMS.Dicom.dll
+D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\obj\x64\Release\UIH.RT.TMS.Dicom.pdb

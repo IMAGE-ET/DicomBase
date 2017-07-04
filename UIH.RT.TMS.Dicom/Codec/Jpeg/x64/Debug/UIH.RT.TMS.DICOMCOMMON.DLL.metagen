@@ -1,0 +1,625 @@
+  UIH.RT.TMS.DicomCommon.SR.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly UIH.RT.TMS.DicomCommon, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a: 
+	hash=None, flags=None
+Class UIH.RT.TMS.Common.Utilities.TimerDelegate: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.Timer: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(UIH.RT.TMS.Common.Utilities.TimerDelegate): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(UIH.RT.TMS.Common.Utilities.TimerDelegate, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(UIH.RT.TMS.Common.Utilities.TimerDelegate, System.Object, System.TimeSpan): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(UIH.RT.TMS.Common.Utilities.TimerDelegate, System.Object, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Boolean Enabled 'get ' : 
+    Int32 IntervalMilliseconds 'get set' : 
+  Methods:
+    get_Enabled(): PrivateScope, Public, HideBySig, SpecialName
+    get_IntervalMilliseconds(): PrivateScope, Public, HideBySig, SpecialName
+    set_IntervalMilliseconds(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Start(): PrivateScope, Public, HideBySig
+    Stop(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.ListEventArgs`1[TItem]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: TItem
+  :System.EventArgs
+    Void .ctor(TItem, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TItem Item 'get ' : 
+    Int32 Index 'get ' : 
+  Methods:
+    get_Item(): PrivateScope, Public, HideBySig, SpecialName
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+Class UIH.RT.TMS.Common.Utilities.FileStreamOpener: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    OpenForSoleUpdate(String, FileMode): PrivateScope, Public, Static, HideBySig
+    OpenForSoleUpdate(String, FileMode, Int32): PrivateScope, Public, Static, HideBySig
+    OpenForSoleUpdate(String, FileMode, Int32, ManualResetEvent, Int32): PrivateScope, Public, Static, HideBySig
+    OpenForRead(String, FileMode): PrivateScope, Public, Static, HideBySig
+    OpenForRead(String, FileMode, Int32): PrivateScope, Public, Static, HideBySig
+    OpenForRead(String, FileMode, Int64, ManualResetEvent, Int32): PrivateScope, Public, Static, HideBySig
+Interface UIH.RT.TMS.Common.Utilities.IResourceResolver: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    LocalizeString(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OpenResource(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ResolveResource(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindResources(Regex): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class UIH.RT.TMS.Common.Utilities.ProcessItemDelegate`1[T]: AutoLayout, AnsiClass, Class, Public, Sealed
+  Type parameter: T
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.ProcessItemCommand`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(T, UIH.RT.TMS.Common.Utilities.ProcessItemDelegate`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Execute(): PrivateScope, Public, HideBySig
+Class UIH.RT.TMS.Common.Utilities.ThreadPoolBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Fields:
+    Int32 MinConcurrency : Public, Static, InitOnly
+    Int32 MaxConcurrency : Public, Static, InitOnly
+  Properties:
+    Boolean Active 'get ' : 
+    Int32 Concurrency 'get set' : 
+    System.String ThreadPoolName 'get set' : 
+    System.Threading.ThreadPriority ThreadPriority 'get set' : 
+  Events:
+    System.EventHandler`1[UIH.RT.TMS.Common.Utilities.ItemEventArgs`1[UIH.RT.TMS.Common.Utilities.ThreadPoolBase+StartStopState]] StartStopStateChangedEvent: 
+  Methods:
+    add_StartStopStateChangedEvent(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_StartStopStateChangedEvent(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    get_Active(): PrivateScope, Public, HideBySig, SpecialName
+    get_Concurrency(): PrivateScope, Public, HideBySig, SpecialName
+    set_Concurrency(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ThreadPoolName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ThreadPoolName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ThreadPriority(): PrivateScope, Public, HideBySig, SpecialName
+    set_ThreadPriority(ThreadPriority): PrivateScope, Public, HideBySig, SpecialName
+    Start(): PrivateScope, Public, HideBySig
+    Stop(): PrivateScope, Public, HideBySig
+    Stop(Boolean): PrivateScope, Public, HideBySig
+Struct UIH.RT.TMS.Common.Utilities.ThreadPoolBase+StartStopState: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    StartStopState Starting = 0 : Public, Static, Literal, HasDefault
+    StartStopState Started = 1 : Public, Static, Literal, HasDefault
+    StartStopState Stopping = 2 : Public, Static, Literal, HasDefault
+    StartStopState Stopped = 3 : Public, Static, Literal, HasDefault
+Class UIH.RT.TMS.Common.Utilities.BlockingThreadPool`1[T]: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Type parameter: T,  ReferenceType
+  :UIH.RT.TMS.Common.Utilities.ThreadPoolBase
+  Properties:
+    Boolean AllowInactiveAdd 'get set' : 
+    Int32 SleepTimeMilliseconds 'get set' : 
+    Int32 QueueCount 'get ' : 
+    Int32 ActiveCount 'get ' : 
+  Methods:
+    get_AllowInactiveAdd(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowInactiveAdd(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_SleepTimeMilliseconds(): PrivateScope, Public, HideBySig, SpecialName
+    set_SleepTimeMilliseconds(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_QueueCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_ActiveCount(): PrivateScope, Public, HideBySig, SpecialName
+    Enqueue(T): PrivateScope, Public, HideBySig
+Class UIH.RT.TMS.Common.Utilities.ItemProcessingThreadPool`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+  :UIH.RT.TMS.Common.Utilities.BlockingThreadPool`1[UIH.RT.TMS.Common.Utilities.ProcessItemCommand`1[T]]
+    Void .ctor(Int32, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Enqueue(T, ProcessItemDelegate`1): PrivateScope, Public, HideBySig
+Class UIH.RT.TMS.Common.Utilities.SimpleBlockingThreadPoolDelegate: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.SimpleBlockingThreadPool: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :UIH.RT.TMS.Common.Utilities.BlockingThreadPool`1[UIH.RT.TMS.Common.Utilities.SimpleBlockingThreadPoolDelegate]
+    Void .ctor(Int32, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Interface UIH.RT.TMS.Common.Utilities.IBackgroundTaskContext: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.Object UserState 'get ' : 
+    Boolean CancelRequested 'get ' : 
+  Methods:
+    get_UserState(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CancelRequested(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ReportProgress(BackgroundTaskProgress): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Complete(Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Error(Exception): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class UIH.RT.TMS.Common.Utilities.BackgroundTaskMethod: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(IBackgroundTaskContext): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(IBackgroundTaskContext, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.BackgroundTaskProgress: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Percent 'get ' : 
+    System.String Message 'get ' : 
+  Methods:
+    get_Percent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Message(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class UIH.RT.TMS.Common.Utilities.BackgroundTaskProgressEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    UIH.RT.TMS.Common.Utilities.BackgroundTaskProgress Progress 'get ' : 
+    System.Object UserState 'get ' : 
+  Methods:
+    get_Progress(): PrivateScope, Public, HideBySig, SpecialName
+    get_UserState(): PrivateScope, Public, HideBySig, SpecialName
+Struct UIH.RT.TMS.Common.Utilities.BackgroundTaskTerminatedReason: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    UIH.RT.TMS.Common.Utilities.BackgroundTaskTerminatedReason Completed = 0 : Public, Static, Literal, HasDefault
+    UIH.RT.TMS.Common.Utilities.BackgroundTaskTerminatedReason Cancelled = 1 : Public, Static, Literal, HasDefault
+    UIH.RT.TMS.Common.Utilities.BackgroundTaskTerminatedReason Exception = 2 : Public, Static, Literal, HasDefault
+Class UIH.RT.TMS.Common.Utilities.BackgroundTaskTerminatedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    UIH.RT.TMS.Common.Utilities.BackgroundTaskTerminatedReason Reason 'get ' : 
+    System.Object Result 'get ' : 
+    System.Object[] Results 'get ' : 
+    System.Exception Exception 'get ' : 
+  Methods:
+    get_Reason(): PrivateScope, Public, HideBySig, SpecialName
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    get_Results(): PrivateScope, Public, HideBySig, SpecialName
+    get_Exception(): PrivateScope, Public, HideBySig, SpecialName
+Class UIH.RT.TMS.Common.Utilities.BackgroundTask: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(UIH.RT.TMS.Common.Utilities.BackgroundTaskMethod, Boolean, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(UIH.RT.TMS.Common.Utilities.BackgroundTaskMethod, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Boolean IsRunning 'get ' : 
+    Boolean SupportsCancel 'get ' : 
+    Boolean CancelRequestPending 'get ' : 
+    UIH.RT.TMS.Common.Utilities.BackgroundTaskProgressEventArgs LastBackgroundTaskProgress 'get ' : 
+    System.Globalization.CultureInfo ThreadCulture 'get set' : 
+    System.Globalization.CultureInfo ThreadUICulture 'get set' : 
+  Events:
+    System.EventHandler`1[UIH.RT.TMS.Common.Utilities.BackgroundTaskProgressEventArgs] ProgressUpdated: 
+    System.EventHandler`1[UIH.RT.TMS.Common.Utilities.BackgroundTaskTerminatedEventArgs] Terminated: 
+  Methods:
+    CreateAndRun(BackgroundTaskMethod, Boolean, EventHandler`1, EventHandler`1, Object): PrivateScope, Public, Static, HideBySig
+    Run(): PrivateScope, Public, HideBySig
+    get_IsRunning(): PrivateScope, Public, HideBySig, SpecialName
+    get_SupportsCancel(): PrivateScope, Public, HideBySig, SpecialName
+    RequestCancel(): PrivateScope, Public, HideBySig
+    get_CancelRequestPending(): PrivateScope, Public, HideBySig, SpecialName
+    get_LastBackgroundTaskProgress(): PrivateScope, Public, HideBySig, SpecialName
+    add_ProgressUpdated(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ProgressUpdated(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_Terminated(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_Terminated(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    get_ThreadCulture(): PrivateScope, Public, HideBySig, SpecialName
+    set_ThreadCulture(CultureInfo): PrivateScope, Public, HideBySig, SpecialName
+    get_ThreadUICulture(): PrivateScope, Public, HideBySig, SpecialName
+    set_ThreadUICulture(CultureInfo): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct UIH.RT.TMS.Common.Utilities.DelayedEventPublisherTriggerMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    UIH.RT.TMS.Common.Utilities.DelayedEventPublisherTriggerMode Inactivity = 0 : Public, Static, Literal, HasDefault
+    UIH.RT.TMS.Common.Utilities.DelayedEventPublisherTriggerMode Periodic = 1 : Public, Static, Literal, HasDefault
+Class UIH.RT.TMS.Common.Utilities.DelayedEventPublisherBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Cancel(): PrivateScope, Public, HideBySig
+    PublishNow(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.DelayedEventPublisher: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :UIH.RT.TMS.Common.Utilities.DelayedEventPublisherBase
+    Void .ctor(System.EventHandler, Int32, UIH.RT.TMS.Common.Utilities.DelayedEventPublisherTriggerMode): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Publish(Object, EventArgs): PrivateScope, Public, HideBySig
+    PublishNow(Object, EventArgs): PrivateScope, Public, HideBySig
+Class UIH.RT.TMS.Common.Utilities.DelayedEventPublisher`1[T]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T, System.EventArgs
+  :UIH.RT.TMS.Common.Utilities.DelayedEventPublisherBase
+    Void .ctor(System.EventHandler`1[T], Int32, UIH.RT.TMS.Common.Utilities.DelayedEventPublisherTriggerMode): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Publish(Object, T): PrivateScope, Public, HideBySig
+    PublishNow(Object, T): PrivateScope, Public, HideBySig
+Class UIH.RT.TMS.Common.Utilities.FileUtils: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Delete(String): PrivateScope, Public, Static, HideBySig
+    Delete(String, Int64, ManualResetEvent, Int32): PrivateScope, Public, Static, HideBySig
+    Copy(String, String, Boolean): PrivateScope, Public, Static, HideBySig
+    Copy(String, String, Boolean, Int64, ManualResetEvent, Int32): PrivateScope, Public, Static, HideBySig
+    Backup(String, String): PrivateScope, Public, Static, HideBySig
+Interface UIH.RT.TMS.Common.Utilities.IObjectMemberContext: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.Object Object 'get ' : 
+    System.Reflection.MemberInfo Member 'get ' : 
+    System.Type MemberType 'get ' : 
+    System.Object MemberValue 'get set' : 
+  Methods:
+    get_Object(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Member(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MemberType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MemberValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MemberValue(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class UIH.RT.TMS.Common.Utilities.ObjectWalker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Predicate`1[System.Reflection.MemberInfo]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IncludeNonPublicFields 'get set' : 
+    Boolean IncludePublicFields 'get set' : 
+    Boolean IncludeNonPublicProperties 'get set' : 
+    Boolean IncludePublicProperties 'get set' : 
+  Methods:
+    get_IncludeNonPublicFields(): PrivateScope, Public, HideBySig, SpecialName
+    set_IncludeNonPublicFields(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IncludePublicFields(): PrivateScope, Public, HideBySig, SpecialName
+    set_IncludePublicFields(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IncludeNonPublicProperties(): PrivateScope, Public, HideBySig, SpecialName
+    set_IncludeNonPublicProperties(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IncludePublicProperties(): PrivateScope, Public, HideBySig, SpecialName
+    set_IncludePublicProperties(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    Walk(Object): PrivateScope, Public, HideBySig
+    Walk(Type): PrivateScope, Public, HideBySig
+Struct UIH.RT.TMS.Common.Utilities.SizeUnits: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    UIH.RT.TMS.Common.Utilities.SizeUnits Bytes = 0 : Public, Static, Literal, HasDefault
+    UIH.RT.TMS.Common.Utilities.SizeUnits Kilobytes = 1 : Public, Static, Literal, HasDefault
+    UIH.RT.TMS.Common.Utilities.SizeUnits Megabytes = 2 : Public, Static, Literal, HasDefault
+    UIH.RT.TMS.Common.Utilities.SizeUnits Gigabytes = 3 : Public, Static, Literal, HasDefault
+Class UIH.RT.TMS.Common.Utilities.SystemResources: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetAvailableMemory(SizeUnits): PrivateScope, Public, Static, HideBySig
+    GetDriveInformation(String): PrivateScope, Public, Static, HideBySig
+Class UIH.RT.TMS.Common.Utilities.DriveInformation: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String RootDirectory 'get set' : 
+    Int64 Total 'get set' : 
+    Int64 Free 'get set' : 
+  Methods:
+    get_RootDirectory(): PrivateScope, Public, HideBySig, SpecialName
+    set_RootDirectory(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Total(): PrivateScope, Public, HideBySig, SpecialName
+    set_Total(Int64): PrivateScope, Public, HideBySig, SpecialName
+    get_Free(): PrivateScope, Public, HideBySig, SpecialName
+    set_Free(Int64): PrivateScope, Public, HideBySig, SpecialName
+Class UIH.RT.TMS.Common.Utilities.LargeMemoryStream: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.IO.Stream
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Byte[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int64 MaxLength = 140737488093184 : Public, Static, Literal, HasDefault
+  Properties:
+    Boolean CanRead 'get ' : 
+    Boolean CanSeek 'get ' : 
+    Boolean CanWrite 'get ' : 
+    Int64 Length 'get ' : 
+    Int64 Position 'get set' : 
+  Methods:
+    get_CanRead(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CanSeek(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CanWrite(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Length(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Position(Int64): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    Seek(Int64, SeekOrigin): PrivateScope, Public, Virtual, HideBySig
+    Read(Byte[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+    ReadByte(): PrivateScope, Public, Virtual, HideBySig
+    Write(Byte[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+    WriteByte(Byte): PrivateScope, Public, Virtual, HideBySig
+    SetLength(Int64): PrivateScope, Public, Virtual, HideBySig
+    Flush(): PrivateScope, Public, Virtual, HideBySig
+    WriteTo(Stream): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ToArray(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.BlockingQueue`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean ContinueBlocking 'get set' : 
+    Int32 Count 'get ' : 
+  Methods:
+    Dequeue(T&(Out)): PrivateScope, Public, HideBySig
+    Enqueue(T): PrivateScope, Public, HideBySig
+    get_ContinueBlocking(): PrivateScope, Public, HideBySig, SpecialName
+    set_ContinueBlocking(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+Class UIH.RT.TMS.Common.SafeDirectoryCatalog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Composition.Primitives.ComposablePartCatalog
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Linq.IQueryable`1[System.ComponentModel.Composition.Primitives.ComposablePartDefinition] Parts 'get ' : 
+  Methods:
+    get_Parts(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class UIH.RT.TMS.Common.Utilities.ResourceResolver: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Reflection.Assembly[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Reflection.Assembly): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Reflection.Assembly, UIH.RT.TMS.Common.Utilities.IResourceResolver): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Reflection.Assembly[], UIH.RT.TMS.Common.Utilities.IResourceResolver): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Type, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Type, Boolean, UIH.RT.TMS.Common.Utilities.IResourceResolver): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    UIH.RT.TMS.Common.Utilities.IResourceResolver
+  Methods:
+    LocalizeString(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ResolveResource(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OpenResource(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    FindResources(Regex): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.EventsHelper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Fire(Delegate, Object, EventArgs): PrivateScope, Public, Static, HideBySig
+Class UIH.RT.TMS.Common.Utilities.CollectionSynchronizeHelper`2[TDestItem,TSourceItem]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: TDestItem,  ReferenceType
+  Type parameter: TSourceItem
+    Void .ctor(CompareItemsDelegate, AddItemDelegate, UpdateItemDelegate, RemoveItemDelegate): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Synchronize(ICollection`1, ICollection`1): PrivateScope, Public, HideBySig
+Class UIH.RT.TMS.Common.Utilities.CollectionSynchronizeHelper`2+CompareItemsDelegate[TDestItem,TSourceItem]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: TDestItem,  ReferenceType
+  Type parameter: TSourceItem
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(TDestItem, TSourceItem): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(TDestItem, TSourceItem, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.CollectionSynchronizeHelper`2+AddItemDelegate[TDestItem,TSourceItem]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: TDestItem,  ReferenceType
+  Type parameter: TSourceItem
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(TSourceItem, ICollection`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(TSourceItem, ICollection`1, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.CollectionSynchronizeHelper`2+UpdateItemDelegate[TDestItem,TSourceItem]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: TDestItem,  ReferenceType
+  Type parameter: TSourceItem
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(TDestItem, TSourceItem, ICollection`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(TDestItem, TSourceItem, ICollection`1, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.CollectionSynchronizeHelper`2+RemoveItemDelegate[TDestItem,TSourceItem]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: TDestItem,  ReferenceType
+  Type parameter: TSourceItem
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(TDestItem, ICollection`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(TDestItem, ICollection`1, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct UIH.RT.TMS.Common.Utilities.FileSize: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int64): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IComparable`1[UIH.RT.TMS.Common.Utilities.FileSize]
+    System.IComparable
+    System.IEquatable`1[UIH.RT.TMS.Common.Utilities.FileSize]
+  Fields:
+    Int64 Size : Public, InitOnly
+    UIH.RT.TMS.Common.Utilities.FileSize Empty : Public, Static, InitOnly
+  Methods:
+    CompareTo(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CompareTo(FileSize): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(FileSize): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Parse(String): PrivateScope, Public, Static, HideBySig
+    TryParse(String, FileSize&(Out)): PrivateScope, Public, Static, HideBySig
+    op_Implicit(FileSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(Int64): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(FileSize, FileSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(FileSize, FileSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_GreaterThan(FileSize, FileSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_LessThan(FileSize, FileSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_GreaterThanOrEqual(FileSize, FileSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_LessThanOrEqual(FileSize, FileSize): PrivateScope, Public, Static, HideBySig, SpecialName
+Class UIH.RT.TMS.Common.Utilities.FileProcessor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Process(String, String, ProcessFile, Boolean): PrivateScope, Public, Static, HideBySig
+    Process(String, String, ProcessFileCancellable, Boolean): PrivateScope, Public, Static, HideBySig
+Class UIH.RT.TMS.Common.Utilities.FileProcessor+ProcessFile: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.FileProcessor+ProcessFileCancellable: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String, Boolean&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(String, Boolean&(Out), AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&(Out), IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.ItemEventArgs`1[TItem]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: TItem
+  :System.EventArgs
+    Void .ctor(TItem): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    TItem Item 'get ' : 
+  Methods:
+    get_Item(): PrivateScope, Public, HideBySig, SpecialName
+Class UIH.RT.TMS.Common.Utilities.StringUtilities: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Combine(IEnumerable`1, String, String): PrivateScope, Public, Static, HideBySig
+    Combine(IEnumerable`1, String, String, IFormatProvider): PrivateScope, Public, Static, HideBySig
+    Combine(IEnumerable`1, String): PrivateScope, Public, Static, HideBySig
+    Combine(IEnumerable`1, String, Boolean): PrivateScope, Public, Static, HideBySig
+    Combine(IEnumerable`1, String, FormatDelegate`1): PrivateScope, Public, Static, HideBySig
+    Combine(IEnumerable`1, String, FormatDelegate`1, Boolean): PrivateScope, Public, Static, HideBySig
+    SplitQuoted(String, String): PrivateScope, Public, Static, HideBySig
+    NullIfEmpty(String): PrivateScope, Public, Static, HideBySig
+    EmptyIfNull(String): PrivateScope, Public, Static, HideBySig
+Class UIH.RT.TMS.Common.Utilities.StringUtilities+FormatDelegate`1[T]: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  Type parameter: T
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(T, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class UIH.RT.TMS.Common.Utilities.DateTimeUtils: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ParseISO(String): PrivateScope, Public, Static, HideBySig
+    FormatISO(DateTime): PrivateScope, Public, Static, HideBySig
+Interface UIH.RT.TMS.Common.Utilities.ICloningContext: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    CloneFields(T, T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class UIH.RT.TMS.Common.Utilities.CloneCreatedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.Object, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object Source 'get ' : 
+    System.Object Clone 'get ' : 
+  Methods:
+    get_Source(): PrivateScope, Public, HideBySig, SpecialName
+    get_Clone(): PrivateScope, Public, HideBySig, SpecialName
+Class UIH.RT.TMS.Common.Utilities.CloneableAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean UseDefaultConstructor : Public, InitOnly
+Class UIH.RT.TMS.Common.Utilities.CloneIgnoreAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class UIH.RT.TMS.Common.Utilities.CloneCopyReferenceAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class UIH.RT.TMS.Common.Utilities.CloneInitializeAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class UIH.RT.TMS.Common.Utilities.OnCloneCompleteAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class UIH.RT.TMS.Common.Utilities.CloningException: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Exception
+Class UIH.RT.TMS.Common.Utilities.CloneBuilder: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Clone(Object): PrivateScope, Public, Static, HideBySig
+Class UIH.RT.TMS.Common.Utilities.ExclusiveLock: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Boolean IsLocked 'get ' : 
+  Methods:
+    get_IsLocked(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Lock(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Lock(TimeSpan): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Unlock(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WithLock(ExclusiveLock, Action`1): PrivateScope, Public, Static, HideBySig
+    WithLock(ExclusiveLock, Action`1, T): PrivateScope, Public, Static, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CreateFileLock(FileInfo): PrivateScope, Public, Static, HideBySig
+    CreateDirectoryLock(DirectoryInfo): PrivateScope, Public, Static, HideBySig
+    CreateFileSystemLock(String): PrivateScope, Public, Static, HideBySig
+Class UIH.RT.TMS.Common.Utilities.NamedMutexLock: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :UIH.RT.TMS.Common.Utilities.ExclusiveLock
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get ' : 
+    Boolean IsLocked 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsLocked(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    Lock(): PrivateScope, Public, Virtual, HideBySig
+    Lock(TimeSpan): PrivateScope, Public, Virtual, HideBySig
+    Unlock(): PrivateScope, Public, Virtual, HideBySig
+Class UIH.RT.TMS.Common.Utilities.ThreadLock: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :UIH.RT.TMS.Common.Utilities.ExclusiveLock
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsLocked 'get ' : 
+  Methods:
+    get_IsLocked(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    Lock(): PrivateScope, Public, Virtual, HideBySig
+    Lock(TimeSpan): PrivateScope, Public, Virtual, HideBySig
+    Unlock(): PrivateScope, Public, Virtual, HideBySig
+Struct UIH.RT.TMS.Common.LogLevel: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    UIH.RT.TMS.Common.LogLevel Debug = 0 : Public, Static, Literal, HasDefault
+    UIH.RT.TMS.Common.LogLevel Info = 1 : Public, Static, Literal, HasDefault
+    UIH.RT.TMS.Common.LogLevel Warn = 2 : Public, Static, Literal, HasDefault
+    UIH.RT.TMS.Common.LogLevel Error = 3 : Public, Static, Literal, HasDefault
+    UIH.RT.TMS.Common.LogLevel Fatal = 4 : Public, Static, Literal, HasDefault
+Class UIH.RT.TMS.Common.Platform: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.Composition.Hosting.CompositionContainer CompositionContainer : Public
+  Properties:
+    UIH.RT.TMS.Common.Platform Instance 'get set' : 
+    System.String WorkingDirectory 'get ' : 
+    System.String PluginDirectory 'get set' : 
+    System.String LogDirectory 'get ' : 
+    Boolean IsWin32Platform 'get ' : 
+    Boolean IsUnixPlatform 'get ' : 
+  Methods:
+    get_Instance(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Instance(Platform): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_WorkingDirectory(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_PluginDirectory(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_PluginDirectory(String): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LogDirectory(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsWin32Platform(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsUnixPlatform(): PrivateScope, Public, Static, HideBySig, SpecialName
+    StartApp(String[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsLogLevelEnabled(LogLevel): PrivateScope, Public, Static, HideBySig
+    IsLogLevelEnabled(String, LogLevel): PrivateScope, Public, Static, HideBySig
+    Log(LogLevel, Object): PrivateScope, Public, Static, HideBySig
+    Log(LogLevel, String, Object[]): PrivateScope, Public, Static, HideBySig
+    Log(LogLevel, Exception, String, Object[]): PrivateScope, Public, Static, HideBySig
+    Log(String, LogLevel, String, Object[]): PrivateScope, Public, Static, HideBySig
+    Log(String, LogLevel, Exception, String, Object[]): PrivateScope, Public, Static, HideBySig
+    CheckForEmptyString(String, String): PrivateScope, Public, Static, HideBySig
+    CheckForNullReference(Object, String): PrivateScope, Public, Static, HideBySig
+    CheckExpectedType(Object, Type): PrivateScope, Public, Static, HideBySig
+    CheckForInvalidCast(Object, String, String): PrivateScope, Public, Static, HideBySig (Obsolete)
+    CheckPositive(Int32, String): PrivateScope, Public, Static, HideBySig
+    CheckTrue(Boolean, String): PrivateScope, Public, Static, HideBySig
+    CheckFalse(Boolean, String): PrivateScope, Public, Static, HideBySig
+    CheckPositive(Single, String): PrivateScope, Public, Static, HideBySig
+    CheckPositive(Double, String): PrivateScope, Public, Static, HideBySig
+    CheckNonNegative(Int32, String): PrivateScope, Public, Static, HideBySig
+    CheckArgumentRange(Int32, Int32, Int32, String): PrivateScope, Public, Static, HideBySig
+    CheckIndexRange(Int32, Int32, Int32, Object): PrivateScope, Public, Static, HideBySig
+    CheckMemberIsSet(Object, String): PrivateScope, Public, Static, HideBySig
+    CheckMemberIsSet(Object, String, String): PrivateScope, Public, Static, HideBySig

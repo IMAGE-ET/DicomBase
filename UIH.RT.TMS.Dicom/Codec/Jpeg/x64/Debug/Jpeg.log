@@ -1,0 +1,43 @@
+﻿Build started 2016-5-16 19:15:39.
+     1>Project "D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\Jpeg.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "x64\Debug\UIH.RT.TMS.Dicom.Codec.Jpeg.unsuccessfulbuild".
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"x64\Debug\UIH.RT.TMS.Dicom.Codec.Jpeg.dll" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"x64\Debug\UIH.RT.TMS.Dicom.Codec.Jpeg.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\x64\Debug\UIH.RT.TMS.Dicom.Codec.Jpeg.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 /DLL x64\Debug\app.res
+         x64\Debug\AssemblyInfo.obj
+         x64\Debug\DicomJpegCodec.obj
+         x64\Debug\DicomJpegCodecFactory.obj
+         x64\Debug\Jpeg12Codec.obj
+         x64\Debug\Jpeg16Codec.obj
+         x64\Debug\Jpeg8Codec.obj
+         "x64\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\libijg12\x64\Debug\libijg12.lib
+         D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\libijg16\x64\Debug\libijg16.lib
+         D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\libijg8\x64\Debug\libijg8.lib
+         Jpeg.vcxproj -> D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\x64\Debug\UIH.RT.TMS.Dicom.Codec.Jpeg.dll
+       MetaGen:
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'UIH.RT.TMS.Dicom.Codec.Jpeg, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. 系统找不到指定的文件。
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"x64\Debug\UIH.RT.TMS.Dicom.Codec.Jpeg.dll;#2" /manifest x64\Debug\UIH.RT.TMS.Dicom.Codec.Jpeg.dll.intermediate.manifest
+       _CopyFilesMarkedCopyLocal:
+         Copying file from "D:\RT_TMS\UIH\bin_debug\UIH.RT.TMS.Dicom.dll" to "x64\Debug\UIH.RT.TMS.Dicom.dll".
+         Copying file from "D:\RT_TMS\UIH\bin_debug\UIH.RT.TMS.DicomCommon.dll" to "x64\Debug\UIH.RT.TMS.DicomCommon.dll".
+         Copying file from "D:\RT_TMS\UIH\bin_debug\log4net.dll" to "x64\Debug\log4net.dll".
+         Copying file from "D:\RT_TMS\UIH\bin_debug\UIH.RT.TMS.DicomCommon.pdb" to "x64\Debug\UIH.RT.TMS.DicomCommon.pdb".
+         Copying file from "D:\RT_TMS\UIH\bin_debug\UIH.RT.TMS.Dicom.pdb" to "x64\Debug\UIH.RT.TMS.Dicom.pdb".
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\UIH.RT.TMS.Dicom.Codec.Jpeg.unsuccessfulbuild".
+         Touching "x64\Debug\UIH.RT.TMS.Dicom.Codec.Jpeg.lastbuildstate".
+     1>Done Building Project "D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\Jpeg.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.90

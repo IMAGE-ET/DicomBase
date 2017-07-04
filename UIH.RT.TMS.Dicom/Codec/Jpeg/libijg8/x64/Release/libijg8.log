@@ -1,0 +1,151 @@
+﻿Build started 2016-5-16 19:16:37.
+     1>Project "D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\libijg8\libijg8.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Release\libijg8.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ot /GL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TC /errorReport:prompt jaricom.c jcapimin.c jcapistd.c jcarith.c jccoefct.c jccolor.c jcdctmgr.c jcdiffct.c jchuff.c jcinit.c jclhuff.c jclossls.c jclossy.c jcmainct.c jcmarker.c jcmaster.c jcodec.c jcomapi.c jcparam.c jcphuff.c jcpred.c jcprepct.c jcsample.c jcscale.c jcshuff.c jctrans.c jdapimin.c jdapistd.c jdarith.c jdatadst.c jdatasrc.c jdcoefct.c jdcolor.c jddctmgr.c jddiffct.c jdhuff.c jdinput.c jdlhuff.c jdlossls.c jdlossy.c jdmainct.c jdmarker.c jdmaster.c jdmerge.c jdphuff.c jdpostct.c jdpred.c jdsample.c jdscale.c jdshuff.c jdtrans.c jerror.c jfdctflt.c jfdctfst.c jfdctint.c jidctflt.c jidctfst.c jidctint.c jidctred.c jmemmgr.c jmemnobs.c jquant1.c jquant2.c jutils.c
+         jaricom.c
+         jcapimin.c
+         jcapistd.c
+         jcarith.c
+         jccoefct.c
+         jccolor.c
+         jcdctmgr.c
+         jcdiffct.c
+         jchuff.c
+         jcinit.c
+         jclhuff.c
+         jclossls.c
+         jclossy.c
+         jcmainct.c
+         jcmarker.c
+         jcmaster.c
+         jcodec.c
+         jcomapi.c
+         jcparam.c
+         jcphuff.c
+         Compiling...
+         jcpred.c
+         jcprepct.c
+         jcsample.c
+         jcscale.c
+         jcshuff.c
+         jctrans.c
+         jdapimin.c
+         jdapistd.c
+         jdarith.c
+         jdatadst.c
+         jdatasrc.c
+         jdcoefct.c
+         jdcolor.c
+         jddctmgr.c
+         jddiffct.c
+         jdhuff.c
+         jdinput.c
+         jdlhuff.c
+         jdlossls.c
+         jdlossy.c
+         Compiling...
+         jdmainct.c
+         jdmarker.c
+         jdmaster.c
+         jdmerge.c
+         jdphuff.c
+         jdpostct.c
+         jdpred.c
+         jdsample.c
+         jdscale.c
+         jdshuff.c
+         jdtrans.c
+         jerror.c
+         jfdctflt.c
+         jfdctfst.c
+         jfdctint.c
+         jidctflt.c
+         jidctfst.c
+         jidctint.c
+         jidctred.c
+         jmemmgr.c
+     1>jmemmgr.c(315): warning C4267: '+=' : conversion from 'size_t' to 'long', possible loss of data
+     1>jmemmgr.c(375): warning C4267: '+=' : conversion from 'size_t' to 'long', possible loss of data
+     1>jmemmgr.c(1037): warning C4267: '-=' : conversion from 'size_t' to 'long', possible loss of data
+     1>jmemmgr.c(1051): warning C4267: '-=' : conversion from 'size_t' to 'long', possible loss of data
+         Compiling...
+         jmemnobs.c
+         jquant1.c
+         jquant2.c
+         jutils.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"x64\Release\libijg8.lib" /NOLOGO /LTCG x64\Release\jaricom.obj
+         x64\Release\jcapimin.obj
+         x64\Release\jcapistd.obj
+         x64\Release\jcarith.obj
+         x64\Release\jccoefct.obj
+         x64\Release\jccolor.obj
+         x64\Release\jcdctmgr.obj
+         x64\Release\jcdiffct.obj
+         x64\Release\jchuff.obj
+         x64\Release\jcinit.obj
+         x64\Release\jclhuff.obj
+         x64\Release\jclossls.obj
+         x64\Release\jclossy.obj
+         x64\Release\jcmainct.obj
+         x64\Release\jcmarker.obj
+         x64\Release\jcmaster.obj
+         x64\Release\jcodec.obj
+         x64\Release\jcomapi.obj
+         x64\Release\jcparam.obj
+         x64\Release\jcphuff.obj
+         x64\Release\jcpred.obj
+         x64\Release\jcprepct.obj
+         x64\Release\jcsample.obj
+         x64\Release\jcscale.obj
+         x64\Release\jcshuff.obj
+         x64\Release\jctrans.obj
+         x64\Release\jdapimin.obj
+         x64\Release\jdapistd.obj
+         x64\Release\jdarith.obj
+         x64\Release\jdatadst.obj
+         x64\Release\jdatasrc.obj
+         x64\Release\jdcoefct.obj
+         x64\Release\jdcolor.obj
+         x64\Release\jddctmgr.obj
+         x64\Release\jddiffct.obj
+         x64\Release\jdhuff.obj
+         x64\Release\jdinput.obj
+         x64\Release\jdlhuff.obj
+         x64\Release\jdlossls.obj
+         x64\Release\jdlossy.obj
+         x64\Release\jdmainct.obj
+         x64\Release\jdmarker.obj
+         x64\Release\jdmaster.obj
+         x64\Release\jdmerge.obj
+         x64\Release\jdphuff.obj
+         x64\Release\jdpostct.obj
+         x64\Release\jdpred.obj
+         x64\Release\jdsample.obj
+         x64\Release\jdscale.obj
+         x64\Release\jdshuff.obj
+         x64\Release\jdtrans.obj
+         x64\Release\jerror.obj
+         x64\Release\jfdctflt.obj
+         x64\Release\jfdctfst.obj
+         x64\Release\jfdctint.obj
+         x64\Release\jidctflt.obj
+         x64\Release\jidctfst.obj
+         x64\Release\jidctint.obj
+         x64\Release\jidctred.obj
+         x64\Release\jmemmgr.obj
+         x64\Release\jmemnobs.obj
+         x64\Release\jquant1.obj
+         x64\Release\jquant2.obj
+         x64\Release\jutils.obj
+         libijg8.vcxproj -> D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\libijg8\x64\Release\libijg8.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\libijg8.unsuccessfulbuild".
+         Touching "x64\Release\libijg8.lastbuildstate".
+     1>Done Building Project "D:\RT_TMS\MAIN\Features\Projects\UIH.RT.TMS.Dicom\Codec\Jpeg\libijg8\libijg8.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.88
